@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="81">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="88">
  <tileset firstgid="1" source="../tilesets/outside.tsx"/>
  <tileset firstgid="49" source="../tilesets/items.tsx"/>
  <tileset firstgid="54" source="../tilesets/inside.tsx"/>
@@ -44,7 +44,7 @@
   <object id="62" name="static" gid="242" x="1268.67" y="501.333" width="52" height="178"/>
   <object id="63" name="static" gid="243" x="1094" y="575" width="82" height="98"/>
  </objectgroup>
- <layer id="1" name="Terrain" width="40" height="15">
+ <layer id="1" name="Terrain" width="40" height="15" visible="0">
   <data encoding="csv">
 0,205,206,161,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,161,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -130,7 +130,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="13" name="Moving Objects">
+ <objectgroup id="13" name="Moving Objects" visible="0">
   <object id="66" name="boat" x="1790.67" y="619.333" width="768" height="38">
    <properties>
     <property name="flip" type="bool" value="true"/>
@@ -185,6 +185,13 @@
   <object id="78" name="skull" gid="53" x="576" y="64" width="64" height="64"/>
   <object id="79" name="skull" gid="53" x="832" y="128" width="64" height="64"/>
   <object id="80" name="skull" gid="53" x="704" y="64" width="64" height="64"/>
+  <object id="81" name="skull" gid="53" x="831.333" y="194" width="64" height="64"/>
+  <object id="82" name="skull" gid="53" x="832.667" y="157.333" width="64" height="64"/>
+  <object id="83" name="skull" gid="53" x="770.667" y="317.333" width="64" height="64"/>
+  <object id="84" name="diamond" gid="49" x="578.667" y="380" width="64" height="64"/>
+  <object id="85" name="diamond" gid="49" x="640.667" y="378.667" width="64" height="64"/>
+  <object id="86" name="diamond" gid="49" x="641.333" y="310.667" width="64" height="64"/>
+  <object id="87" name="diamond" gid="49" x="578" y="441.333" width="64" height="64"/>
  </objectgroup>
  <objectgroup id="6" name="Enemies" visible="0">
   <object id="36" name="shell" gid="224" x="192" y="384" width="76" height="46">
@@ -203,7 +210,7 @@
  <objectgroup id="2" name="Water" visible="0">
   <object id="2" name="water" x="0" y="640" width="2560" height="320"/>
  </objectgroup>
- <objectgroup id="8" name="Data" visible="0">
+ <objectgroup id="8" name="Data">
   <object id="28" name="Data" x="0" y="0" width="64" height="64">
    <properties>
     <property name="bg" value=""/>
@@ -211,7 +218,7 @@
     <property name="death_border_bottom" type="int" value="0"/>
     <property name="horizon_line" type="int" value="600"/>
     <property name="level_unlock" type="int" value="1"/>
-    <property name="top_limit" type="int" value="100"/>
+    <property name="top_limit" type="int" value="75"/>
    </properties>
   </object>
  </objectgroup>
